@@ -1,0 +1,5 @@
+[{
+    "path": "/healthcheck",
+    "method": "get",
+    "handlers": ["healthcheck"]
+}]
