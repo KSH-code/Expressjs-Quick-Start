@@ -1,10 +1,16 @@
 'use strict'
 
+/**
+ * @author Henry Kim <tjdgnsnq133@gmail.com>
+ */
 const express = require('express')
 const bodyParser = require('body-parser')
 const fileUpload = require('express-fileupload')
 const asyncify = require('express-asyncify')
+const mongoose = require('mongoose')
 const routes = require('./route.json')
+
+mongoose.connect('mongodb://localhost/midas')
 
 const app = asyncify(express())
 app.use(bodyParser.json())

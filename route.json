@@ -2,4 +2,12 @@
     "path": "/healthcheck",
     "method": "get",
     "handlers": ["healthcheck"]
+},{
+    "path": "/register",
+    "method": "post",
+    "handlers": ["register"]
+},{
+    "path": "/login",
+    "method": "post",
+    "handlers": ["login"]
 }]

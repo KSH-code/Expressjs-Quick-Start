@@ -1,5 +1,8 @@
 'use strict'
 
+/**
+ * @author Henry Kim <tjdgnsnq133@gmail.com>
+ */
 const { expect } = require('chai')
 const config = require('./config.json')
 require('../')
