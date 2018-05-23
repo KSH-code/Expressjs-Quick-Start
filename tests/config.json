@@ -1,8 +1,10 @@
 [{
+    "fileName": "./init"
+}, {
     "url": "http://localhost:7070/healthcheck",
     "method": "get",
     "fileName": "./healthcheck"
-}{
+}, {
     "url": "http://localhost:7070/register",
     "method": "post",
     "fileName": "./register"

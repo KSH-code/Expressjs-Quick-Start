@@ -30,3 +30,13 @@
 |:---:|:-------------:|
 | 200 |      성공     |
 | 400 | 아이디 또는 비밀번호가 틀린 경우 |
+## 로그아웃
+### Request info
+|  PATH  | METHOD |
+|:------:|-----------|
+|  /logout  | GET |
+### Request data
+### Response status code
+| status code |      설명     |
+|:---:|:-------------:|
+| 200 |      성공     |

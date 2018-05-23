@@ -10,4 +10,8 @@
     "path": "/login",
     "method": "post",
     "handlers": ["login"]
+},{
+    "path": "/logout",
+    "method": "get",
+    "handlers": ["logout"]
 }]

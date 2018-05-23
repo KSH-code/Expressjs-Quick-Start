@@ -23,6 +23,7 @@
     "express": "4.16.3",
     "express-asyncify": "1.0.0",
     "express-fileupload": "0.4.0",
+    "express-session": "1.15.6",
     "mocha": "5.2.0",
     "mongoose": "5.1.1",
     "request": "2.86.0",

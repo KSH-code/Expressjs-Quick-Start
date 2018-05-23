@@ -10,5 +10,7 @@ module.exports = async (req, res) => {
   let { name, password } = req.body
   const user = await User.findOne({ name, password })
   if (!user) return res.status(400).end()
+  req.session.user = user
+  req.session.save()
   res.end()
 }

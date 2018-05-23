@@ -13,7 +13,11 @@ const userSchema = new mongoose.Schema({
     type: Number,
     default: 0
   },
-  gender: Boolean
+  gender: Boolean,
+  token: {
+    type: String,
+    default: ''
+  }
 })
 
 module.exports = mongoose.model('User', userSchema)
