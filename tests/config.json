@@ -8,4 +8,8 @@
     "url": "http://localhost:7070/register",
     "method": "post",
     "fileName": "./register"
+}, {
+    "url": "http://localhost:7070/login",
+    "method": "post",
+    "fileName": "./login"
 }]

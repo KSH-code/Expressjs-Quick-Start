@@ -1,5 +1,6 @@
 'use strict'
 
+const crypto = require('crypto')
 const { User } = require('../models')
 
 /**
@@ -11,8 +12,14 @@ module.exports = async (req, res) => {
   gender = gender.toLowerCase() === 'f'
   const user = await User.findOne({ name })
   if (user) return res.status(409).end()
+  const salt = `1${Date.now()}1`
   await new User({
-    name, password, gender
+    name,
+    password: crypto.createHmac('sha256', salt)
+      .update(password)
+      .digest('hex'),
+    salt,
+    gender
   }).save()
   res.end()
 }

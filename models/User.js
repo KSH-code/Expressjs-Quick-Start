@@ -9,6 +9,7 @@ const userSchema = new mongoose.Schema({
   name: String,
   password: String,
   nickname: String,
+  salt: String,
   level: {
     type: Number,
     default: 0
