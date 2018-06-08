@@ -11,7 +11,7 @@ const session = require('express-session')
 const mongoose = require('mongoose')
 const routes = require('./route.json')
 
-mongoose.connect(`mongodb://localhost/midas_${process.env.NODE_ENV || 'production'}`)
+mongoose.connect(`mongodb://localhost/${process.env.NODE_ENV || 'production'}`)
 
 const app = asyncify(express())
 app.use(bodyParser.json())
